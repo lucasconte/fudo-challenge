@@ -1,4 +1,4 @@
-# Product API
+# Fudo Challenge
 
 This is a simple Rack-based Ruby API for user authentication and product management. It includes features like JWT-based authentication, asynchronous background jobs using Sidekiq, gzip compression, and OpenAPI (Swagger) documentation.
 
@@ -12,7 +12,7 @@ This is a simple Rack-based Ruby API for user authentication and product managem
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/your-username/your-repo.git
+   git clone https://github.com/lucasconte/fudo-challenge.git
    cd your-repo
    ```
 
