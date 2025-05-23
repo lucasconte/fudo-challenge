@@ -1,0 +1,53 @@
+# Ruby
+*.gem
+*.rbc
+/.bundle
+/vendor/bundle
+/log/*
+/tmp/*
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+# Ignore Byebug command history file.
+.byebug_history
+
+# Documentation
+/doc/
+/*.rdoc
+
+# Node (si usás alguna herramienta JS)
+node_modules/
+
+# Docker
+*.pid
+*.pid.lock
+
+# Editor & OS
+*.swp
+*.swo
+*~
+.DS_Store
+.idea/
+.vscode/
+*.bak
+
+# Environment
+.env
+.env.*
+
+# Coverage
+/coverage/
+coverage/
+
+# Redis dump/logs
+dump.rdb
+*.log
+
+# Sidekiq logs/pids
+sidekiq.log
+*.pid
+
+# Compiled source
+*.o
+*.so
+*.obj

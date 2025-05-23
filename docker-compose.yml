@@ -1,0 +1,36 @@
+version: '3'
+services:
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+
+  app:
+    build: .
+    ports:
+      - "9292:9292"
+    volumes:
+      - .:/app
+    depends_on:
+      - redis
+    command: bundle exec rackup --host 0.0.0.0 --port 9292
+
+  sidekiq:
+    build: .
+    depends_on:
+      - redis
+    volumes:
+      - .:/app
+    command: bundle exec sidekiq -r ./app.rb
+
+  swagger-ui:
+    image: swaggerapi/swagger-ui
+    container_name: swagger-ui
+    ports:
+      - "8080:8080"
+    environment:
+      - SWAGGER_JSON=/swagger/openapi.yaml
+    volumes:
+      - ./docs:/swagger
+    depends_on:
+      - app

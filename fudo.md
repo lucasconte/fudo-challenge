@@ -1,0 +1,3 @@
+# Fudo
+
+Fudo es un software de gestión pensado específicamente para restaurantes. Es una herramienta que centraliza todo lo que pasa en el local, desde la toma de pedidos hasta la facturación, pasando por la gestión de mesas, stock, delivery y reportes. Permite tener control en tiempo real del negocio, mejorar la atención al cliente y tomar decisiones con datos claros. Además, se integra con impresoras de cocina y otros sistemas, y permite operar desde tablets o celulares. Es ideal para simplificar la operación diaria y aumentar la eficiencia del restaurante.
